@@ -7,7 +7,7 @@ import {useNavigate } from "react-router-dom"
 export default function MyModal(){
     const [searchedRes, setSearchRes] = useState([])
     const [searchValue, setSearchValue] = useState("")
-    const {data} = useFetch("https://pet-store-backend-8mwy86dq1-abhisheks-projects-74383ef5.vercel.app/products")
+    const {data} = useFetch("https://pet-store-backend-one.vercel.app/products")
     const {wishlist, setWishlist} = useContext(MyWishlist)
     const {cartItems, setCartItems} = useContext(MyCartItems)
     const navigate = useNavigate()

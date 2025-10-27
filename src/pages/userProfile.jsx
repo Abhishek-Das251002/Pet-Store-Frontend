@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 import useFetch from "../useFetch";
 
 const MyProfile = () => {
-    const {data, loading} = useFetch("https://pet-store-backend-8mwy86dq1-abhisheks-projects-74383ef5.vercel.app/orders/history")
+    const {data, loading} = useFetch("https://pet-store-backend-one.vercel.app/orders/history")
     const {address, setAddress} = useContext(SaveAddresses)
     const [editAddress, setEditAddress] = useState({})
 
