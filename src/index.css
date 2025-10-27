@@ -205,6 +205,26 @@ button.searchCardCBtn {
   }
 }
 
+
+@media (min-width: 344px){
+  button.searchCardWBtn {
+    font-size: 0.75rem;
+  }
+  button.searchCardCBtn {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 576px){
+  button.searchCardWBtn {
+    font-size: 1.1rem;
+  }
+  button.searchCardCBtn {
+    font-size: 1.1rem;
+  }
+}
+
+
 /* Bootstrap md breakpoint (≥768px) */
 @media (min-width: 768px) {
   .searchCardTitle {
