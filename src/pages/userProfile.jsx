@@ -70,7 +70,9 @@ const MyProfile = () => {
                     <li className="list-group-item">
                         <div className="mt-2">
                             <p className="fw-semibold fs-5 mt-2">Order History</p>
-                            {data.map(order => (
+                            {data.length > 0
+                            ?
+                            data.map(order => (
                                 <div class="card mt-3">
                                     <div class="card-body">
                                         <p><strong>Order Id: </strong>{order.orderId}</p>
@@ -89,7 +91,12 @@ const MyProfile = () => {
                                         </p>                                      
                                     </div>
                                 </div>
-                            ))}
+                            ))
+                            : 
+                            <div className="d-flex justify-content-center">
+                                <p className="text-secondary">No Orders Yet!</p>
+                            </div>
+                            }
                         </div>
                     </li>
                 </ul>
