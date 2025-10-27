@@ -118,11 +118,17 @@ const Checkout = () => {
         <div>
             <Header/>
             <ManageAddress editAddress = {editAddress} setEditAddress={setEditAddress}/>
+            {loading
+            ?
+            <p className="m-5 text-center">Loading Checkout Details...</p>
+            :
             <div className="d-flex justify-content-center my-5">
                 <div class="card checkoutCard">
                 <form onSubmit={handleForm}>
                 <div class="card-body">
                 <h5 class="card-title m-3">Choose Delivery Address:</h5>
+                {address.length != 0 
+                ?
                 <ul className="list-group">
                     {
                     address.map(currentAdd => 
@@ -141,6 +147,9 @@ const Checkout = () => {
                         )
                     }
                 </ul>
+                :
+                <p className="text-center text-secondary m-3">please Add a Delivery Address to Checkout</p>
+                }
                 </div>
                 <p className="ms-3 fs-5 fw-bold">OR</p>  
                 <button className="rounded-pill btn btn ms-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style={{background: "#2C786C",color:"#ffffff"}}>Add New Address</button>   
@@ -205,7 +214,8 @@ const Checkout = () => {
                 </div>
                 </form>        
                 </div>
-            </div>            
+            </div>  
+            }          
         </div>
     )
 }
