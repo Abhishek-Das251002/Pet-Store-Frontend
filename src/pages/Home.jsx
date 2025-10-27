@@ -39,7 +39,7 @@ const Home = () => {
                     <div className="container">
                     <div className="row pt-3 pb-5">
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 gy-md-3 gy-3 d-flex justify-content-center">
-                            <div className="card catgrys" onClick={() => navigate(`/products/Dog`)} style={{cursor: "pointer"}}>
+                            <div className="card catgrys" onClick={() => navigate(`/products/category/Dog`)} style={{cursor: "pointer"}}>
                                 <img src="assets/categories/dogImg1.svg" className="card-img-top img-fluid" alt="category" />
                                 <div className="card-body">
                                     <h2 className="card-text catgrys-text text-center fw-bold">Dogs</h2>
@@ -47,7 +47,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 gy-md-3 gy-3 d-flex justify-content-center">
-                            <div className="card catgrys" onClick={() => navigate(`/products/Cat`)} style={{cursor: "pointer"}}>
+                            <div className="card catgrys" onClick={() => navigate(`/products/category/Cat`)} style={{cursor: "pointer"}}>
                                 <img src="assets/categories/catImg3.svg" className="card-img-top" alt="category" />
                                 <div className="card-body">
                                     <h2 className="card-text catgrys-text text-center fw-bold">Cats</h2>
@@ -55,7 +55,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 gy-md-3 gy-3 d-flex justify-content-center">
-                            <div className="card catgrys" onClick={() => navigate(`/products/Bird`)} style={{cursor: "pointer"}}>
+                            <div className="card catgrys" onClick={() => navigate(`/products/category/Bird`)} style={{cursor: "pointer"}}>
                                 <img src="assets/categories/birdImg1.svg" className="card-img-top" alt="category" onClick={() => navigate(`/products/${Bird}`)}/>
                                 <div className="card-body">
                                     <h2 className="card-text catgrys-text text-center fw-bold">Birds</h2>
@@ -63,7 +63,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 gy-md-3 gy-3 d-flex justify-content-center">
-                            <div className="card catgrys" onClick={() => navigate(`/products/Fish`)} style={{cursor: "pointer"}}>
+                            <div className="card catgrys" onClick={() => navigate(`/products/category/Fish`)} style={{cursor: "pointer"}}>
                                 <img src="assets/categories/fishImg1.svg" className="card-img-top" alt="category" />
                                 <div className="card-body">
                                     <h2 className="card-text catgrys-text text-center fw-bold">Fishes</h2>

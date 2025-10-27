@@ -22,7 +22,7 @@ const AllProducts = () => {
     const [filteredProducts, setFilterProduct] = useState([])
     const [filterCount, setFilterCount] = useState([])
     const {selectedPet} = useParams()
-
+    
     function handleClick(product){
         if(wishlist.includes(product._id)){
             setWishlist(
