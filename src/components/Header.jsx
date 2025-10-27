@@ -74,15 +74,15 @@ const Header = () => {
         </div>
         <div className="offcanvas-body" style={{background: "#ffffff"}}>
             <div className="d-flex flex-column gap-3 mt-3">
-                <div className="d-flex flex-row" onClick={() => navigate("/profile")} style={{cursor: "pointer"}}>
+                <div className="d-flex flex-row" data-bs-dismiss="offcanvas" onClick={() => navigate("/profile")} style={{cursor: "pointer"}}>
                     <CircleUser size={30} style={{color: "#2C786C"}}/> 
                     <span className="ms-3 fs-5 text-dark">User Profile</span>
                 </div>
-                <div className="d-flex flex-row" onClick={() => navigate("/wishlist")} style={{cursor: "pointer"}}>
+                <div className="d-flex flex-row" data-bs-dismiss="offcanvas" onClick={() => navigate("/wishlist")} style={{cursor: "pointer"}}>
                     <AiOutlineHeart size={30} className="text-dark"/> 
                     <span className="ms-3 fs-5 text-dark">Wish List ({wishlist.length})</span>
                 </div>
-                <div className="d-flex flex-row" onClick={() => navigate("/cart")} style={{cursor: "pointer"}}>
+                <div className="d-flex flex-row" data-bs-dismiss="offcanvas" onClick={() => navigate("/cart")} style={{cursor: "pointer"}}>
                     <AiOutlineShoppingCart size={30} className="text-dark"/> 
                     <span className="ms-3 fs-5 text-dark">Cart ({cartItems.length})</span>
                 </div>
