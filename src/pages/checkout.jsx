@@ -10,7 +10,7 @@ const Checkout = () => {
     const {itemId} = useParams()
     const {address, setAddress} = useContext(SaveAddresses)
     const [editAddress, setEditAddress] = useState({})
-    const {data,loading, error} = useFetch("https://pet-store-backend-neon.vercel.app/products")
+    const {data,loading, error} = useFetch("pet-store-backend-8mwy86dq1-abhisheks-projects-74383ef5.vercel.app/products")
     const {cartItems, setCartItems} = useContext(MyCartItems)
     const {itemQuantity, setItemQuantity} = useContext(CartItemQuantity)
     const [selectedAddress, setSelectedAddress] = useState({})
@@ -49,7 +49,7 @@ const Checkout = () => {
         e.preventDefault();
         if(itemId){
             try {
-            const response = await fetch('https://pet-store-backend-neon.vercel.app/orders/history', {
+            const response = await fetch('pet-store-backend-8mwy86dq1-abhisheks-projects-74383ef5.vercel.app/orders/history', {
             method: 'POST',
             body: JSON.stringify({ 
                 orderId : orderId,
@@ -79,7 +79,7 @@ const Checkout = () => {
         }
         }else{
             try {
-            const response = await fetch('https://pet-store-backend-neon.vercel.app/orders/history', {
+            const response = await fetch('pet-store-backend-8mwy86dq1-abhisheks-projects-74383ef5.vercel.app/orders/history', {
             method: 'POST',
             body: JSON.stringify({ 
                 orderId : orderId,
