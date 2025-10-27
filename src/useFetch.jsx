@@ -9,10 +9,7 @@ const useFetch = (url) => {
         fetch(url)
         .then((res) => res.json())
         .then((data) => {
-            const modifiedData = data.map(prod => (
-                {...prod, imageUrl : `pet-store-frontend-9hw89a57k-abhisheks-projects-74383ef5.vercel.app${prod.imageUrl}`}
-            ))
-            setData(modifiedData);
+            setData(data);
             setLoading(false);
         })
         .catch((error) => {
