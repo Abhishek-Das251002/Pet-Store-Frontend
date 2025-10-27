@@ -11,7 +11,7 @@ import { toast } from "react-toastify";
 
 const ProductDetail = () => {
     const {id} = useParams()
-    const {data} = useFetch("pet-store-backend-8mwy86dq1-abhisheks-projects-74383ef5.vercel.app/products")
+    const {data} = useFetch("https://pet-store-backend-8mwy86dq1-abhisheks-projects-74383ef5.vercel.app/products")
     const {wishlist, setWishlist} = useContext(MyWishlist)
     const {cartItems, setCartItems} = useContext(MyCartItems)
     const {itemQuantity, setItemQuantity} = useContext(CartItemQuantity)
