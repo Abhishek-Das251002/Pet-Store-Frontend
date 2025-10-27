@@ -224,6 +224,24 @@ button.searchCardCBtn {
   }
 }
 
+@media (min-width: 344px){
+  button.removeCartBtn {
+    font-size: 0.75rem;
+  }
+  button.removeCartBtn {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 576px){
+  button.removeCartBtn {
+    font-size: 1.1rem;
+  }
+  button.removeCartBtn {
+    font-size: 1.1rem;
+  }
+}
+
 
 /* Bootstrap md breakpoint (≥768px) */
 @media (min-width: 768px) {

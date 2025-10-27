@@ -93,8 +93,8 @@ const Cart = () => {
                                         <FiPlusCircle size={20} onClick={() => handleInc(item._id)} style={{cursor: "pointer"}}/>
                                     </span>
                                 </div>   
-                                <button className="text-center w-100 btn btn border border-2 mt-3" style={{background: "#ffffff", color: "#2C786C"}} onClick={() => handleRemoveCart(item._id)}>Remove From Cart</button>                          
-                                <button className="text-center w-100 mt-3 btn btn" style={{background: "#2C786C", color: "#ffffff"}} onClick={() => moveToWishlist(item._id)}>Move to Wishlist</button>
+                                <button className="removeCartBtn text-center w-100 btn btn border border-2 mt-3" style={{background: "#ffffff", color: "#2C786C"}} onClick={() => handleRemoveCart(item._id)}>Remove From Cart</button>                          
+                                <button className="removeCartBtn text-center w-100 mt-3 btn btn" style={{background: "#2C786C", color: "#ffffff"}} onClick={() => moveToWishlist(item._id)}>Move to Wishlist</button>
                             </div>
                         </div>
                     )}    
