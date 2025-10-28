@@ -76,35 +76,35 @@ const ManageAddress = ({editAddress, setEditAddress}) => {
                         <div>
                             <div className="row">
                                 <div className="col-6">
-                                    <label htmlFor="addressName" className="fs-5 mt-2">Name: </label><br />
+                                    <label htmlFor="addressName" className="mt-2">Name: </label><br />
                                     <input type="text" id="addressName"  name="addName" value={addressFields.addName} className="form-control mt-2" onChange={handleChange} required/>
                                 </div>
                                 <div className="col-6">
-                                    <label htmlFor="addressMobNo" className="fs-5 mt-2">Mobile Number: </label><br />
+                                    <label htmlFor="addressMobNo" className="mt-2">Mobile Number: </label><br />
                                     <input type="text" id="addressMobNo"  name="mobNo" value={addressFields.mobNo} className="form-control mt-2" onChange={handleChange} required/>
                                 </div> 
                             </div>
                             <div>
-                                <label htmlFor="addressLine" className="fs-5 mt-2">Address: </label><br />
+                                <label htmlFor="addressLine" className="mt-2">Address: </label><br />
                                 <input type="text" id="addressLine"  name="address" value={addressFields.address} className="form-control mt-2" onChange={handleChange} required/>
                             </div>
                             <div className="row">
                                 <div className="col-6">
-                                    <label htmlFor="addressCity" className="fs-5 mt-2">City: </label><br />
+                                    <label htmlFor="addressCity" className="mt-2">City: </label><br />
                                     <input type="text" id="addressCity"  name="city" value={addressFields.city} className="form-control mt-2" onChange={handleChange} required/>
                                 </div>
                                 <div className="col-6">
-                                    <label htmlFor="addressState" className="fs-5 mt-2">State: </label><br />
+                                    <label htmlFor="addressState" className="mt-2">State: </label><br />
                                     <input type="text" id="addressState"  name="state" value={addressFields.state} className="form-control mt-2" onChange={handleChange} required/>
                                 </div> 
                             </div>     
                             <div className="row">
                                 <div className="col-6">
-                                    <label htmlFor="addressPin" className="fs-5 mt-2">Pincode: </label><br />
+                                    <label htmlFor="addressPin" className="mt-2">Pincode: </label><br />
                                     <input type="text" id="addressPin" name="pincode" value={addressFields.pincode} className="form-control mt-2" onChange={handleChange} required/>
                                 </div>
                                 <div className="col-6">
-                                    <label htmlFor="addressType" className="fs-5 mt-2">Address Type: </label><br />
+                                    <label htmlFor="addressType" className="mt-2">Address Type: </label><br />
                                     <select id="addressType" name="type" value={addressFields.type} className="form-select mt-2" onChange={handleChange} required>
                                         <option value="">--select Address Type--</option>
                                         <option value="Home">Home</option>

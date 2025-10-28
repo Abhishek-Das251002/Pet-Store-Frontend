@@ -159,7 +159,7 @@ const AllProducts = () => {
                 <div className="col-xl-9 col-lg-8" style={{background: "#F8F9FA"}}>
                     <div className="container">
                         <div className="row p-3">
-                            {loading && "Loading products...."}
+                            {loading? "Loading products....":<p className="fs-5 fw-semibold" style={{color: "#2C786C"}}>Showing ({filteredProducts.length} products)</p>}
                             {error && error.message}
                             {filteredProducts.map((product) => (
                                 <div className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 d-flex justify-content-center">
@@ -263,7 +263,7 @@ const AllProducts = () => {
             <div className="col-xl-9 col-lg-8" style={{background: "#F8F9FA"}}>
                     <div className="container">
                         <div className="row p-3">
-                            {loading && "Loading products...."}
+                            {loading? "Loading products....":<p className="fs-5 fw-semibold" style={{color: "#2C786C"}}>Showing ({filteredProducts.length} products)</p>}
                             {error && error.message}
                             {filteredProducts.map((product) => (
                                 <div className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 d-flex justify-content-center">
