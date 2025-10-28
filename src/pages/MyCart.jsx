@@ -81,7 +81,7 @@ const Cart = () => {
                             <img src={item.imageUrl} className="cartImg img-fluid m-3" alt="prodImg" style={{maxHeight: "230px", cursor: "pointer"}} onClick={() => navigate(`/products/${item._id}`)}/>
                             <div className="card-body my-2 lh-1">
                                 <h5 class="card-title fs-4" style={{cursor: "pointer"}} onClick={() => navigate(`/products/${item._id}`)}>{item.name}</h5>
-                                <span className="fw-bold fs-4" style={{color: "#2C786C"}}>₹ {(Math.round(0.8 * item.price).toFixed(2))}</span> <span className="fw-medium fs-4 ms-3 text-decoration-line-through" style={{color: "#9CA3AF"}}>₹ {item.price}</span>
+                                <span className="fw-bold fs-5" style={{color: "#2C786C"}}>₹ {(Math.round(0.8 * item.price).toFixed(2))}</span> <span className="fw-medium fs-5 ms-sm-3 ms-1 text-decoration-line-through" style={{color: "#9CA3AF"}}>₹ {item.price}</span>
                                 <p className="fw-bold fs-5 pt-2" style={{color: "#9CA3AF"}}>{item.discount}% off</p>
                                 <div className="d-flex flex-row">
                                     <p className="mt-1">Quantity:</p>
