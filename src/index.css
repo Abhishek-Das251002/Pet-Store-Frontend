@@ -145,11 +145,12 @@ button.searchCardCBtn {
 
 
 /* XS screens - mobile first */
-@media (max-width: 576px) {
-  .prodDetailsWrapper {
-    margin-left: 4rem;   /* or use % like 5% */
+@media (min-width: 344px) {
+  /* .prodDetailsWrapper {
+    margin-left: 1rem;   
     margin-right: 1rem;
-  }
+  } */
+
   .detailIcons {
     width: 2rem;
     height: 2rem;
@@ -163,8 +164,19 @@ button.searchCardCBtn {
   }
 }
 
+@media (min-width: 390px){
+  .prodDetailsWrapper {
+    margin-left: 1.3rem;   
+    margin-right: 1.3rem;
+  }
+}
+
 /* Small+ screens */
-@media (min-width: 560px) {
+@media (min-width: 536px) {
+  .prodDetailsWrapper {
+    margin-left: 4rem;   
+    margin-right: 4rem;
+  }
   .detailIcons {
     width: 2rem;
     height: 2rem;
@@ -186,6 +198,10 @@ button.searchCardCBtn {
 
 /* Medium+ screens */
 @media (min-width: 756px) {
+  .prodDetailsWrapper {
+    margin-left: 0rem;   
+    margin-right: 0rem;
+  }
   .detailIcons {
     width: 2rem;
     height: 2rem;

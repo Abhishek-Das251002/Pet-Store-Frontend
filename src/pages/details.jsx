@@ -171,7 +171,7 @@ const ProductDetail = () => {
                                     </div>
                                 </div>
                             <hr />
-                            <div className="d-none d-lg-block">
+                            <div className="d-none d-lg-block" style={{textAlign: "justify"}}>
                                 <span className="fw-bold fs-5">Description:</span>
                                 <ul className="detailDescription">
                                     {(rqdProd.fullDetails.split(". ").map(feature => <li>{feature}.</li>))}
@@ -179,7 +179,7 @@ const ProductDetail = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="d-block d-lg-none ms-3">
+                    <div className="d-block d-lg-none ms-3" style={{textAlign: "justify"}}>
                         <span className="fw-bold fs-5">Description:</span>
                         <ul className="detailDescription container">
                             {(rqdProd.fullDetails.split(". ").map(feature => <li>{feature}.</li>))}
