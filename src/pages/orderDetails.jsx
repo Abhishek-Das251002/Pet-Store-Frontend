@@ -22,7 +22,7 @@ const OrderDetails = () => {
                     <p className="my-4 orderSummaryCardText fw-semibold">Thank you for your order #{orderId}</p>
                     <div class="card">
                         <div class="card-body orderSummaryCardText">
-                            <h5 class="card-title text-center"><PartyPopper className="mx-3" style={{color: "#FFC107"}}/>Order placed successfully!</h5>
+                            <h5 class="card-title successHeading text-sm-center"><PartyPopper className="mx-3" style={{color: "#FFC107"}}/>Order placed successfully!</h5>
                             <hr />
                             <div className="d-flex flex-row m-3">
                                 <div>
