@@ -28,7 +28,7 @@ const OrderDetails = () => {
                                 <div>
                                     <p className="m-2 fw-bold">Address:</p>
                                 </div>
-                                <div className="m-3">
+                                <div className="ms-3 mt-2">
                                     <h5>{selectedAddress.type}</h5>
                                     <span className="mt-2">{selectedAddress.addName}</span><br />  
                                     <span>{selectedAddress.mobNo}</span><br />
