@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
-    const {data,loading, error} = useFetch("https://pet-store-backend-one.vercel.app/products")
+    const {data,loading, error} = useFetch("https://pet-store-backend-olive.vercel.app/products")
     const {cartItems, setCartItems} = useContext(MyCartItems)
     const {wishlist, setWishlist} = useContext(MyWishlist)
     const {itemQuantity, setItemQuantity} = useContext(CartItemQuantity)

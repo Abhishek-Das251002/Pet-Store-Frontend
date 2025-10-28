@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 
 const WishList = () => {
-    const {data,loading,error} = useFetch("https://pet-store-backend-one.vercel.app/products")
+    const {data,loading,error} = useFetch("https://pet-store-backend-olive.vercel.app/products")
     const {wishlist, setWishlist} = useContext(MyWishlist)
     const {cartItems, setCartItems} = useContext(MyCartItems)
     const {itemQuantity, setItemQuantity} = useContext(CartItemQuantity)

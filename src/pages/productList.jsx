@@ -10,7 +10,7 @@ import UseMatchMedia from "../components/useMatchMedia"
 import { toast } from "react-toastify"
 
 const AllProducts = () => {
-    const {data, error, loading} = useFetch("https://pet-store-backend-one.vercel.app/products")
+    const {data, error, loading} = useFetch("https://pet-store-backend-olive.vercel.app/products")
     const {wishlist, setWishlist} = useContext(MyWishlist)
     const {cartItems, setCartItems} = useContext(MyCartItems)
     const [filterValue, setFilterValue] = useState({
