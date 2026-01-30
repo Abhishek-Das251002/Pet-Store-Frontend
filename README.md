@@ -14,7 +14,15 @@ cd Pet-Store-Frontend
 npm install
 npm run dev
 ```
+---
 
+## Environment Setup
+Create a ```.env``` file in the backend root directory and add the following environment variables:
+
+```
+PORT = 3000
+MONGODB_URI=your_mongodb_atlas_connection_string
+```
 ---
 ## Technologies
 **Frontend Technologies**
@@ -42,32 +50,32 @@ Watch a walkthrough (5–7 minutes) of all major features of this app: [Video Li
 ---
 ## Features
 **Home**
-- Featured product categories with quick navigation
-- Global search bar for real-time product discovery
+- View featured product categories with quick navigation
+- Search products globally with real-time results
 
 **Product Listing**
 - Filter and sort products by category and attributes
-- Responsive grid layout for browsing products
+- Browse products using a responsive grid layout
 
 **Product Details**
 - View complete product information and pricing
-- Add products to cart or wishlist
+- Add products to the cart or wishlist
 
 **Wishlist & Cart**
-- Manage saved and selected products
-- Update quantities and remove items
+- View and manage saved and selected products
+- Update product quantities and remove items
 
 **Checkout**
-- Address selection and order summary
-- Secure order placement with backend persistence
+- Select delivery addresses and review order summary
+- Place orders securely with backend persistence
 
 **User Profile**
-- View and manage personal details and addresses
-- Access order history
+- View and manage personal details and saved addresses
+- Access complete order history
 
 **UX Enhancements**
-- Loading indicators for async actions
-- Toast notifications for success and error states
+- Display loading indicators for asynchronous actions
+- Show toast notifications for success and error states
 
 ---
 ## API References
